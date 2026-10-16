@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Vórtex Contábil — Apresentação</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+  :root { --accent: #8b5cf6; --accent2: #22d3ee; }
+  .reveal { font-family: 'Inter', system-ui, sans-serif; }
+  .reveal h1, .reveal h2, .reveal h3 { text-transform: none; font-weight: 800; letter-spacing: -0.02em; }
+  .reveal .slides section { text-align: left; }
+  .reveal-viewport { background: radial-gradient(circle at 20% 20%, #1e1b4b, #020617 70%); }
+  .grad { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .scene { perspective: 900px; }
+  .card3d {
+    transform-style: preserve-3d; transition: transform .15s ease-out, box-shadow .3s;
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
+    backdrop-filter: blur(6px); box-shadow: 0 20px 40px rgba(0,0,0,.4);
+  }
+  .card3d:hover { box-shadow: 0 30px 60px rgba(139,92,246,.35); }
+  .card3d > * { transform: translateZ(30px); }
+  .orb { position: absolute; border-radius: 9999px; filter: blur(60px); opacity: .35; pointer-events: none; animation: float 8s ease-in-out infinite; }
+  @keyframes float { 50% { transform: translateY(-30px); } }
+</style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1. Capa -->
+    <section data-transition="zoom">
+      <div class="orb w-72 h-72 bg-violet-600 -top-10 -left-10"></div>
+      <div class="orb w-72 h-72 bg-cyan-400 bottom-0 right-0" style="animation-delay:-4s"></div>
+      <p class="text-cyan-300 tracking-[.3em] text-lg uppercase mb-4">Contabilidade digital</p>
+      <h1 class="text-7xl"><span class="grad">Vórtex</span> Contábil</h1>
+      <p class="text-2xl text-slate-300 mt-6 max-w-2xl">Contabilidade moderna, com tecnologia própria, para quem presta serviços e vende no digital.</p>
+      <p class="text-sm text-slate-500 mt-10">Use as setas ou deslize ↔ ↕ · Pressione <kbd>O</kbd> para visão geral</p>
+    </section>
+
+    <!-- 2. Problema -->
+    <section data-transition="convex">
+      <h2 class="text-5xl mb-10">O <span class="grad">problema</span></h2>
+      <div class="scene grid grid-cols-3 gap-6">
+        <div class="card3d tilt rounded-2xl p-6"><div class="text-4xl mb-3">🧾</div><h3 class="text-2xl mb-2">Burocracia</h3><p class="text-lg text-slate-300">Impostos, guias e prazos que consomem o tempo de quem deveria estar faturando.</p></div>
+        <div class="card3d tilt rounded-2xl p-6"><div class="text-4xl mb-3">🐢</div><h3 class="text-2xl mb-2">Atendimento lento</h3><p class="text-lg text-slate-300">Escritórios tradicionais respondem em dias e entregam relatórios sem clareza.</p></div>
+        <div class="card3d tilt rounded-2xl p-6"><div class="text-4xl mb-3">🔀</div><h3 class="text-2xl mb-2">Sem visão do negócio</h3><p class="text-lg text-slate-300">Números soltos, sem leitura estratégica para decidir e pagar menos imposto.</p></div>
+      </div>
+    </section>
+
+    <!-- 3. Solução -->
+    <section data-transition="cube">
+      <h2 class="text-5xl mb-6">A <span class="grad">solução</span></h2>
+      <p class="text-2xl text-slate-300 mb-8 max-w-3xl">Contabilidade consultiva apoiada por um sistema próprio, o <b class="text-white">Vórtex OS</b>.</p>
+      <div class="scene grid grid-cols-2 gap-6">
+        <div class="card3d tilt rounded-2xl p-6"><h3 class="text-2xl mb-2">📥 Vortex Box</h3><p class="text-lg text-slate-300">Envio de documentos com leitura automática por IA e organização sem digitação.</p></div>
+        <div class="card3d tilt rounded-2xl p-6"><h3 class="text-2xl mb-2">⚙️ Motor Simples Nacional</h3><p class="text-lg text-slate-300">Cálculo de alíquota efetiva, Fator R e ST com precisão e rastreabilidade.</p></div>
+        <div class="card3d tilt rounded-2xl p-6"><h3 class="text-2xl mb-2">📊 Portal do cliente</h3><p class="text-lg text-slate-300">DAS, notas, DRE e balancete na palma da mão, em tempo real.</p></div>
+        <div class="card3d tilt rounded-2xl p-6"><h3 class="text-2xl mb-2">🤝 Consultoria humana</h3><p class="text-lg text-slate-300">Contadora dedicada para planejamento tributário e dúvidas do dia a dia.</p></div>
+      </div>
+    </section>
+
+    <!-- 4. Público -->
+    <section data-transition="concave">
+      <h2 class="text-5xl mb-8">Para <span class="grad">quem</span> é</h2>
+      <div class="scene grid grid-cols-3 gap-6">
+        <div class="card3d tilt rounded-2xl p-6 text-center"><div class="text-5xl mb-3">🩺</div><h3 class="text-2xl">Médicos e clínicas</h3></div>
+        <div class="card3d tilt rounded-2xl p-6 text-center"><div class="text-5xl mb-3">💻</div><h3 class="text-2xl">Prestadores de serviço</h3></div>
+        <div class="card3d tilt rounded-2xl p-6 text-center"><div class="text-5xl mb-3">🍕</div><h3 class="text-2xl">Delivery e comércio</h3></div>
+      </div>
+      <p class="text-xl text-slate-300 mt-8">Foco em PJ com planejamento para a <b class="text-white">reforma tributária de 2027</b>.</p>
+    </section>
+
+    <!-- 5. Passos -->
+    <section data-transition="slide">
+      <h2 class="text-5xl mb-8">Como <span class="grad">funciona</span></h2>
+      <div class="scene flex items-stretch gap-4">
+        <div class="card3d tilt rounded-2xl p-6 flex-1"><div class="text-5xl font-black grad">01</div><p class="text-xl mt-2">Conversa inicial e diagnóstico tributário</p></div>
+        <div class="card3d tilt rounded-2xl p-6 flex-1"><div class="text-5xl font-black grad">02</div><p class="text-xl mt-2">Abertura ou migração sem dor de cabeça</p></div>
+        <div class="card3d tilt rounded-2xl p-6 flex-1"><div class="text-5xl font-black grad">03</div><p class="text-xl mt-2">Rotina automatizada no Vortex OS</p></div>
+        <div class="card3d tilt rounded-2xl p-6 flex-1"><div class="text-5xl font-black grad">04</div><p class="text-xl mt-2">Revisões periódicas e economia de imposto</p></div>
+      </div>
+    </section>
+
+    <!-- 6. Contato -->
+    <section data-transition="zoom">
+      <h2 class="text-6xl mb-6">Vamos <span class="grad">conversar?</span></h2>
+      <p class="text-2xl text-slate-300 mb-10 max-w-2xl">Agende um diagnóstico gratuito e descubra quanto sua empresa pode economizar.</p>
+      <div class="scene inline-block">
+        <div class="card3d tilt rounded-2xl p-6 inline-block">
+          <p class="text-xl">📱 WhatsApp: <span class="text-cyan-300">(00) 00000-0000</span></p>
+          <p class="text-xl mt-2">📸 Instagram: <span class="text-cyan-300">@vortexcontabil</span></p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true, controls: true, progress: true, center: true,
+    width: 1100, height: 700,
+    transition: 'cube', backgroundTransition: 'slide',
+    parallaxBackgroundImage: '', 
+  });
+
+  // Efeito 3D de inclinação nos cards, seguindo o mouse
+  document.querySelectorAll('.tilt').forEach(function (el) {
+    el.addEventListener('mousemove', function (e) {
+      var r = el.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      el.style.transform = 'rotateY(' + (x * 18) + 'deg) rotateX(' + (-y * 18) + 'deg)';
+    });
+    el.addEventListener('mouseleave', function () { el.style.transform = ''; });
+  });
+</script>
+</body>
+</html>
